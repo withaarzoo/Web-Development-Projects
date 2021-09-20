@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+api key - 3265874a2c77ae4a04bb96236a642d2f
+
+weather.innerHTML = 
+    `<h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /></h2>
+    <small>${data.weather[0].main}</small>`;
