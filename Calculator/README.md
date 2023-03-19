@@ -16,3 +16,4 @@ Simply open the index.html file in a web browser and use the calculator by click
  - JavaScript
 
 ## Preview
+<img width="959" alt="Screenshot 2023-03-19 141333" src="https://user-images.githubusercontent.com/59678435/226164031-6301b745-9c19-44dd-9857-9b77283ee822.png">
