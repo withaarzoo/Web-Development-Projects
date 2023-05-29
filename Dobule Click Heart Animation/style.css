@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    height: 420px;
+    width: 320px;
+    background-image: url("./img/human.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.container .heart {
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.heart.active {
+    animation: animate 0.8s linear forwards;
+}
+
+@keyframes animate {
+    30% {
+        opacity: 1;
+        font-size: 80px;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    70% {
+        opacity: 1;
+        font-size: 70px;
+    }
+
+    80% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    90% {
+        opacity: 1;
+        font-size: 60px;
+    }
+}
