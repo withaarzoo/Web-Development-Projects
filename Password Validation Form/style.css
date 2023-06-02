@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.wrapper {
+    width: 450px;
+    padding: 28px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.wrapper .pass-field {
+    position: relative;
+    height: 65px;
+    width: 100%;
+}
+.pass-field input {
+    width: 100%;
+    height: 100%;
+    padding: 0 17px;
+    outline: none;
+    font-size: 1.3rem;
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+}
+.pass-field i {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #959595;
+    transform: translateY(-50%);
+}
+.wrapper .content {
+    margin: 20px 0 10px;
+}
+.content p {
+    font-size: 1.3rem;
+}
+.content .requirement-list {
+    margin-top: 20px;
+}
+.requirement-list li {
+    list-style: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.requirement-list li i {
+    font-size: 1rem;
+    color: #959595;
+    margin-right: 0.6rem;
+}
+.requirement-list li span {
+    position: relative;
+    margin-left: 12px;
+}
+.requirement-list li span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #959595;
+    top: 50%;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.requirement-list li.valid span{
+    color: #959595;
+}
+.requirement-list li.valid span::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
