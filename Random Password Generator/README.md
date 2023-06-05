@@ -25,7 +25,7 @@ The Random Password Generator offers the following features:
 * Password Length: The generated password has a fixed length of 12 characters.
 * Copy to Clipboard: Users can easily copy the generated password to their clipboard by clicking the copy icon.
 
-How it Works
+## How it Works
 The JavaScript code in `script.js file` performs the following actions:
 
 1. Selects the necessary HTML elements (password input field, copy button, and generate button) using `document.querySelector`.
